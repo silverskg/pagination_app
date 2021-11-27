@@ -1,6 +1,6 @@
 <%= form_with model: @post, url: posts_path do |form| %>
   <div>
-    <%= form.text_field :body %>
+    <%= form.text_field :body, required: true %>
     <%= form.submit "送信" %>
   </div>
 <% end %>
